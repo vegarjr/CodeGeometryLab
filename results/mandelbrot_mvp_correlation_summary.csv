@@ -1,0 +1,11 @@
+predictor,outcome,spearman_rho,p_value,type,significant
+cg_density,runtime_cv,-0.680,0.031,geometric,yes
+lg_edge_count,runtime_cv,+0.661,0.038,geometric,yes
+traj_recurrence_rate,stability_cv,-0.701,0.024,geometric,yes
+baseline_cyclomatic_complexity,stability_cv,+0.746,0.013,baseline,yes
+cg_max_in_degree,runtime_mean_s,+0.614,0.059,geometric,no
+tg_dag_longest_path,scaling_exponent,+0.609,0.062,geometric,no
+baseline_trace_total_calls,runtime_mean_s,+0.567,0.087,baseline,no
+frac_depth_entropy,runtime_mean_s,+0.555,0.096,geometric,no
+frac_compression_ratio,runtime_mean_s,-0.515,0.128,geometric,no
+baseline_ast_node_count,scaling_exponent,-0.600,0.067,baseline,no

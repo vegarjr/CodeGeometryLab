@@ -34,6 +34,8 @@ class TraceRecord:
     total_returns: int = 0
     unique_functions: set = field(default_factory=set)
 
+    was_capped: bool = False
+
     def to_dict(self):
         return {
             "variant_name": self.variant_name,
@@ -45,13 +47,14 @@ class TraceRecord:
             "max_call_depth": self.max_call_depth,
             "unique_function_count": len(self.unique_functions),
             "function_call_counts": dict(self.function_call_counts),
+            "was_capped": self.was_capped,
         }
 
 
 class ExecutionTracer:
     """Lightweight tracer that captures execution events via sys.settrace."""
 
-    def __init__(self, variant_name, target_file=None, max_events=500_000):
+    def __init__(self, variant_name, target_file=None, max_events=2_000_000):
         self.variant_name = variant_name
         self.target_file = target_file
         self.max_events = max_events
@@ -99,6 +102,7 @@ class ExecutionTracer:
                 self._step += 1
                 if self._step >= self.max_events:
                     self._capped = True
+                    self._record.was_capped = True
 
         elif event == "return":
             self._record.total_returns += 1
@@ -119,6 +123,7 @@ class ExecutionTracer:
                 self._step += 1
                 if self._step >= self.max_events:
                     self._capped = True
+                    self._record.was_capped = True
 
         elif event == "line":
             self._record.total_lines_executed += 1
@@ -136,6 +141,7 @@ class ExecutionTracer:
                 self._step += 1
                 if self._step >= self.max_events:
                     self._capped = True
+                    self._record.was_capped = True
 
         return self._trace_fn
 
@@ -152,7 +158,7 @@ class ExecutionTracer:
         return result, self._record
 
 
-def trace_variant(variant_name, compute_fn, params, target_file=None, max_events=500_000):
+def trace_variant(variant_name, compute_fn, params, target_file=None, max_events=2_000_000):
     """Convenience function: trace a single variant execution.
 
     Returns (result_array, TraceRecord).

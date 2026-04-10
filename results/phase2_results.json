@@ -1,0 +1,4853 @@
+{
+  "experiment": "phase2_multi_task",
+  "timestamp": "2026-04-10T14:36:03.976758",
+  "tasks": {
+    "mandelbrot": {
+      "n_variants": 25,
+      "capped": [
+        "v01_naive_loop",
+        "v02_complex_class",
+        "v03_recursive",
+        "v08_generator_pipeline",
+        "v09_functional_map",
+        "v10_object_oriented",
+        "v11_while_true_break",
+        "v12_precomputed_coords",
+        "v13_column_major",
+        "v14_flat_array",
+        "v15_enumerate_style",
+        "v16_try_except",
+        "v17_deque_worklist",
+        "v20_dict_cache",
+        "v21_list_comprehension",
+        "v22_split_real_imag",
+        "v23_itertools_product",
+        "v24_half_grid_symmetry",
+        "v25_state_machine"
+      ],
+      "runtime": {
+        "v01_naive_loop": {
+          "runtime_mean_s": 0.12749830982841862,
+          "runtime_std_s": 0.007722324533143046,
+          "runtime_median_s": 0.12597097698017024,
+          "runtime_cv": 0.060568054145465906,
+          "stability_cv": 0.06223918076992394
+        },
+        "v02_complex_class": {
+          "runtime_mean_s": 0.12895506786492963,
+          "runtime_std_s": 0.007511793704845219,
+          "runtime_median_s": 0.1293043945042882,
+          "runtime_cv": 0.058251248510165075,
+          "stability_cv": 0.0604732723447472
+        },
+        "v03_recursive": {
+          "runtime_mean_s": 0.24249090486749386,
+          "runtime_std_s": 0.011094394206064761,
+          "runtime_median_s": 0.2428996140079107,
+          "runtime_cv": 0.045751795153418866,
+          "stability_cv": 0.04577324367540029
+        },
+        "v04_numpy_vectorized": {
+          "runtime_mean_s": 0.0455859509393728,
+          "runtime_std_s": 0.0031839826212154746,
+          "runtime_median_s": 0.0453725844854489,
+          "runtime_cv": 0.06984569929121416,
+          "stability_cv": 0.06869947052565167
+        },
+        "v05_numpy_rowwise": {
+          "runtime_mean_s": 0.2695878586304995,
+          "runtime_std_s": 0.008127579511118721,
+          "runtime_median_s": 0.26961337198736146,
+          "runtime_cv": 0.03014816599088197,
+          "stability_cv": 0.029864877659781113
+        },
+        "v06_early_exit": {
+          "runtime_mean_s": 0.05644104536428737,
+          "runtime_std_s": 0.004307933240972856,
+          "runtime_median_s": 0.05580184451537207,
+          "runtime_cv": 0.07632624826787257,
+          "stability_cv": 0.07917463066379389
+        },
+        "v07_chunked_blocks": {
+          "runtime_mean_s": 0.08173105182941072,
+          "runtime_std_s": 0.007443692013457203,
+          "runtime_median_s": 0.07999756251228973,
+          "runtime_cv": 0.09107544619630857,
+          "stability_cv": 0.08852497070880835
+        },
+        "v08_generator_pipeline": {
+          "runtime_mean_s": 0.13548198026837782,
+          "runtime_std_s": 0.011026304981398371,
+          "runtime_median_s": 0.13428111898247153,
+          "runtime_cv": 0.08138576775713077,
+          "stability_cv": 0.08370117682173117
+        },
+        "v09_functional_map": {
+          "runtime_mean_s": 0.24233864832591887,
+          "runtime_std_s": 0.01087776551271284,
+          "runtime_median_s": 0.23912031747750007,
+          "runtime_cv": 0.044886631116648965,
+          "stability_cv": 0.04678064781302465
+        },
+        "v10_object_oriented": {
+          "runtime_mean_s": 0.13185792883353617,
+          "runtime_std_s": 0.008413523700637925,
+          "runtime_median_s": 0.13222389048314653,
+          "runtime_cv": 0.06380749170768156,
+          "stability_cv": 0.0626506469681542
+        },
+        "v11_while_true_break": {
+          "runtime_mean_s": 0.1255226458015386,
+          "runtime_std_s": 0.0068128046160938075,
+          "runtime_median_s": 0.12529785599326715,
+          "runtime_cv": 0.054275502022682026,
+          "stability_cv": 0.05207191071081765
+        },
+        "v12_precomputed_coords": {
+          "runtime_mean_s": 0.6426980004975728,
+          "runtime_std_s": 0.03951988568341528,
+          "runtime_median_s": 0.6395958004868589,
+          "runtime_cv": 0.0614906000218131,
+          "stability_cv": 0.05988839589371169
+        },
+        "v13_column_major": {
+          "runtime_mean_s": 0.1323779948366185,
+          "runtime_std_s": 0.00828914564635238,
+          "runtime_median_s": 0.13191781550995074,
+          "runtime_cv": 0.06261724734977955,
+          "stability_cv": 0.06303751070194906
+        },
+        "v14_flat_array": {
+          "runtime_mean_s": 0.14120968023392683,
+          "runtime_std_s": 0.014982418742363992,
+          "runtime_median_s": 0.13895670196507126,
+          "runtime_cv": 0.10610050753988139,
+          "stability_cv": 0.11039797389629288
+        },
+        "v15_enumerate_style": {
+          "runtime_mean_s": 0.633744939538883,
+          "runtime_std_s": 0.027750292724502728,
+          "runtime_median_s": 0.6299818529805634,
+          "runtime_cv": 0.043787793784505834,
+          "stability_cv": 0.041742584032305026
+        },
+        "v16_try_except": {
+          "runtime_mean_s": 0.13970761413414343,
+          "runtime_std_s": 0.01111935255084093,
+          "runtime_median_s": 0.13815326199983247,
+          "runtime_cv": 0.07959016850838517,
+          "stability_cv": 0.08181251652734119
+        },
+        "v17_deque_worklist": {
+          "runtime_mean_s": 0.14212384787000096,
+          "runtime_std_s": 0.010622585050601947,
+          "runtime_median_s": 0.14095667301444337,
+          "runtime_cv": 0.0747417496064299,
+          "stability_cv": 0.07414337130599478
+        },
+        "v18_numpy_complex": {
+          "runtime_mean_s": 0.031348289500844354,
+          "runtime_std_s": 0.002416865862492768,
+          "runtime_median_s": 0.030689360020915046,
+          "runtime_cv": 0.07709721649813367,
+          "stability_cv": 0.0751572100844449
+        },
+        "v19_sentinel_value": {
+          "runtime_mean_s": 0.04859706904001845,
+          "runtime_std_s": 0.0030832254147913933,
+          "runtime_median_s": 0.048105009511346,
+          "runtime_cv": 0.06344467836635242,
+          "stability_cv": 0.06558795887137389
+        },
+        "v20_dict_cache": {
+          "runtime_mean_s": 0.13194613551022485,
+          "runtime_std_s": 0.007493681591240945,
+          "runtime_median_s": 0.13039483650936745,
+          "runtime_cv": 0.05679349048203265,
+          "stability_cv": 0.059064935766449236
+        },
+        "v21_list_comprehension": {
+          "runtime_mean_s": 0.11733758306945674,
+          "runtime_std_s": 0.008795616859215198,
+          "runtime_median_s": 0.115670131490333,
+          "runtime_cv": 0.07495992868720268,
+          "stability_cv": 0.0785519795196101
+        },
+        "v22_split_real_imag": {
+          "runtime_mean_s": 0.21993767673460146,
+          "runtime_std_s": 0.009534203624122923,
+          "runtime_median_s": 0.21978800251963548,
+          "runtime_cv": 0.04334956959478951,
+          "stability_cv": 0.045013468854594105
+        },
+        "v23_itertools_product": {
+          "runtime_mean_s": 0.1360241957125254,
+          "runtime_std_s": 0.01162843693926656,
+          "runtime_median_s": 0.1333943380159326,
+          "runtime_cv": 0.0854880036478377,
+          "stability_cv": 0.08525442678513222
+        },
+        "v24_half_grid_symmetry": {
+          "runtime_mean_s": 0.06551303313657021,
+          "runtime_std_s": 0.00555304585250474,
+          "runtime_median_s": 0.06532890899688937,
+          "runtime_cv": 0.08476246002728514,
+          "stability_cv": 0.08599815209480781
+        },
+        "v25_state_machine": {
+          "runtime_mean_s": 0.22846311846709189,
+          "runtime_std_s": 0.009812363158044325,
+          "runtime_median_s": 0.22654157847864553,
+          "runtime_cv": 0.04294944069695744,
+          "stability_cv": 0.043304940150353154
+        }
+      }
+    },
+    "graph_traversal": {
+      "n_variants": 10,
+      "capped": [],
+      "runtime": {
+        "g01_dijkstra_heap": {
+          "runtime_mean_s": 0.00022954536834731697,
+          "runtime_std_s": 6.473545966560495e-05,
+          "runtime_median_s": 0.0001935485051944852,
+          "runtime_cv": 0.2820159697914532,
+          "stability_cv": 0.2859469877629599
+        },
+        "g02_dijkstra_no_skip": {
+          "runtime_mean_s": 0.00026095739643399916,
+          "runtime_std_s": 0.00011550648683497006,
+          "runtime_median_s": 0.00020524050341919065,
+          "runtime_cv": 0.4426258401308956,
+          "stability_cv": 0.44899319907680657
+        },
+        "g03_bellman_ford": {
+          "runtime_mean_s": 0.0006757531043452521,
+          "runtime_std_s": 0.00010290126122351398,
+          "runtime_median_s": 0.0006642819789703935,
+          "runtime_cv": 0.1522764165814919,
+          "stability_cv": 0.15921354493722742
+        },
+        "g04_bfs_weighted": {
+          "runtime_mean_s": 0.00023767333477735518,
+          "runtime_std_s": 4.444080597528639e-05,
+          "runtime_median_s": 0.0002258314925711602,
+          "runtime_cv": 0.18698271733729457,
+          "stability_cv": 0.18563084290823453
+        },
+        "g05_recursive_relax": {
+          "runtime_mean_s": 0.014173968501078585,
+          "runtime_std_s": 0.0018631337343379352,
+          "runtime_median_s": 0.013497911975719035,
+          "runtime_cv": 0.1314475712427439,
+          "stability_cv": 0.1283097961923436
+        },
+        "g06_dict_priority": {
+          "runtime_mean_s": 0.0015361083419217418,
+          "runtime_std_s": 0.0004999051956526962,
+          "runtime_median_s": 0.0012820184929296374,
+          "runtime_cv": 0.32543615707944923,
+          "stability_cv": 0.33503876736355653
+        },
+        "g07_sorted_list_queue": {
+          "runtime_mean_s": 0.0009072922635823488,
+          "runtime_std_s": 0.0002176466620400079,
+          "runtime_median_s": 0.0008236514986492693,
+          "runtime_cv": 0.2398859449993024,
+          "stability_cv": 0.2488012257789135
+        },
+        "g08_class_based": {
+          "runtime_mean_s": 0.0003212987018438677,
+          "runtime_std_s": 0.00014812025476327508,
+          "runtime_median_s": 0.000270261982223019,
+          "runtime_cv": 0.4610048341721991,
+          "stability_cv": 0.4633083739794709
+        },
+        "g09_iterative_improve": {
+          "runtime_mean_s": 0.0006849313271231949,
+          "runtime_std_s": 8.131579587684251e-05,
+          "runtime_median_s": 0.0006656544865109026,
+          "runtime_cv": 0.11872109313262098,
+          "stability_cv": 0.11499050983747484
+        },
+        "g10_bidirectional": {
+          "runtime_mean_s": 0.0003020866677009811,
+          "runtime_std_s": 2.7193423884149405e-05,
+          "runtime_median_s": 0.0002979209821205586,
+          "runtime_cv": 0.09001861648216355,
+          "stability_cv": 0.08657064737253715
+        }
+      }
+    }
+  },
+  "correlation_stats": {
+    "total_tests": 426,
+    "raw_significant": 11,
+    "fdr_significant": 0
+  },
+  "top_correlations": [
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_displacement",
+      "rho": 0.709090909090909,
+      "p_raw": 0.02166592336753244,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_wall_clock",
+      "rho": 0.6727272727272726,
+      "p_raw": 0.03304122254543772,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_5_unique_ratio",
+      "rho": -0.6606060606060605,
+      "p_raw": 0.03758837757140934,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_total_events",
+      "rho": 0.6484848484848483,
+      "p_raw": 0.04254012768448949,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_total_lines",
+      "rho": 0.6484848484848483,
+      "p_raw": 0.04254012768448949,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_8_unique_ratio",
+      "rho": -0.6242424242424242,
+      "p_raw": 0.053717767217167436,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_8_top_frequency",
+      "rho": 0.6154574548966636,
+      "p_raw": 0.058205202603733616,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_3_unique_ratio",
+      "rho": -0.6121212121212121,
+      "p_raw": 0.05997214247725527,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "traj_displacement",
+      "rho": -0.6121212121212121,
+      "p_raw": 0.05997214247725527,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "traj_displacement",
+      "rho": -0.6121212121212121,
+      "p_raw": 0.05997214247725527,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_3_top_frequency",
+      "rho": 0.6022390336078728,
+      "p_raw": 0.06541212136077765,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_edge_count",
+      "rho": -0.5957474328064633,
+      "p_raw": 0.06915584415208557,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_5_top_frequency",
+      "rho": 0.5785300076028639,
+      "p_raw": 0.07975393476604609,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "traj_recurrence_rate",
+      "rho": -0.5502196844620003,
+      "p_raw": 0.004375809645742597,
+      "n": 25,
+      "p_adjusted": 0.5167876477093243,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "cg_dag_longest_path",
+      "rho": 0.5449492609130662,
+      "p_raw": 0.10331591735410985,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "cg_dag_longest_path",
+      "rho": 0.5449492609130662,
+      "p_raw": 0.10331591735410985,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_self_loop_count",
+      "rho": -0.5337825136516684,
+      "p_raw": 0.11202516929143763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_8_entropy",
+      "rho": -0.5272727272727272,
+      "p_raw": 0.11730806555020232,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_8_top_frequency",
+      "rho": -0.5231388366621641,
+      "p_raw": 0.12074214214266064,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_8_top_frequency",
+      "rho": -0.5231388366621641,
+      "p_raw": 0.12074214214266064,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_mean_out_degree",
+      "rho": -0.5227987675648555,
+      "p_raw": 0.12102739408380088,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_is_dag",
+      "rho": -0.5222329678670935,
+      "p_raw": 0.1215029188171132,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_self_loop_count",
+      "rho": 0.5222329678670935,
+      "p_raw": 0.1215029188171132,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_branching_growth_rate",
+      "rho": -0.5222329678670935,
+      "p_raw": 0.1215029188171132,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_class_count",
+      "rho": 0.5222329678670935,
+      "p_raw": 0.1215029188171132,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "traj_recurrence_rate",
+      "rho": 0.5222329678670935,
+      "p_raw": 0.1215029188171132,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "baseline_class_count",
+      "rho": 0.5222329678670935,
+      "p_raw": 0.1215029188171132,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "traj_recurrence_rate",
+      "rho": 0.5222329678670935,
+      "p_raw": 0.1215029188171132,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_total_events",
+      "rho": 0.5183919775231666,
+      "p_raw": 0.007936721034501016,
+      "n": 25,
+      "p_adjusted": 0.5167876477093243,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "traj_recurrence_rate",
+      "rho": -0.5164712700809794,
+      "p_raw": 0.008212506490044456,
+      "n": 25,
+      "p_adjusted": 0.5167876477093243,
+      "significant_fdr": false
+    }
+  ],
+  "all_correlations": [
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_ast_node_count",
+      "rho": 0.11309867491382274,
+      "p_raw": 0.5903875967932284,
+      "n": 25,
+      "p_adjusted": 0.7835939335401942,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_class_count",
+      "rho": 0.020446520502738263,
+      "p_raw": 0.9227196444574874,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_cyclomatic_complexity",
+      "rho": 0.13844887564762368,
+      "p_raw": 0.5092576860951484,
+      "n": 25,
+      "p_adjusted": 0.7231459142551108,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_function_count",
+      "rho": 0.2163674565789864,
+      "p_raw": 0.29888780176055924,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_line_count",
+      "rho": 0.037539419332671776,
+      "p_raw": 0.8586051135935117,
+      "n": 25,
+      "p_adjusted": 0.9625415220811473,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_max_nesting_depth",
+      "rho": 0.16509234153570568,
+      "p_raw": 0.4303251759661981,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_max_depth",
+      "rho": 0.2573785049878105,
+      "p_raw": 0.21421322029182732,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_total_calls",
+      "rho": 0.3022699124212945,
+      "p_raw": 0.14194635630027944,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_total_events",
+      "rho": 0.5183919775231666,
+      "p_raw": 0.007936721034501016,
+      "n": 25,
+      "p_adjusted": 0.5167876477093243,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_total_lines",
+      "rho": 0.4761538461538461,
+      "p_raw": 0.016123874315806964,
+      "n": 25,
+      "p_adjusted": 0.6868770458533767,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_unique_functions",
+      "rho": 0.2163674565789864,
+      "p_raw": 0.29888780176055924,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_wall_clock",
+      "rho": 0.35230769230769227,
+      "p_raw": 0.08412635618208412,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_dag_longest_path",
+      "rho": 0.06905276963087599,
+      "p_raw": 0.7429272346591514,
+      "n": 25,
+      "p_adjusted": 0.912998783363012,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_density",
+      "rho": 0.16599403898640752,
+      "p_raw": 0.42777579917672265,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_edge_count",
+      "rho": 0.24381996584410268,
+      "p_raw": 0.24018831702062532,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_is_dag",
+      "rho": -0.254762332682534,
+      "p_raw": 0.21907150777476048,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_largest_wcc_size",
+      "rho": 0.2163674565789864,
+      "p_raw": 0.29888780176055924,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_max_in_degree",
+      "rho": 0.22538123989521244,
+      "p_raw": 0.27870808287682414,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_max_out_degree",
+      "rho": 0.2234546657246505,
+      "p_raw": 0.2829466952188288,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_mean_out_degree",
+      "rho": 0.26550683817725135,
+      "p_raw": 0.19958336103276328,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_n_strongly_connected_components",
+      "rho": 0.2163674565789864,
+      "p_raw": 0.29888780176055924,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_node_count",
+      "rho": 0.2163674565789864,
+      "p_raw": 0.29888780176055924,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_self_loop_count",
+      "rho": 0.254762332682534,
+      "p_raw": 0.21907150777476048,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_compression_ratio",
+      "rho": -0.2915384615384616,
+      "p_raw": 0.15736225008219265,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_depth_entropy",
+      "rho": 0.267093484396209,
+      "p_raw": 0.19680912226228636,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_depth_range",
+      "rho": 0.2573785049878105,
+      "p_raw": 0.21421322029182732,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_depth_transitions",
+      "rho": 0.2710634417126623,
+      "p_raw": 0.18998344466710365,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_mean_depth",
+      "rho": 0.2679229672670047,
+      "p_raw": 0.1953693142775216,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_3_entropy",
+      "rho": 0.11153846153846154,
+      "p_raw": 0.5955562161058598,
+      "n": 25,
+      "p_adjusted": 0.7835939335401942,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_3_top_frequency",
+      "rho": 0.23658396282993532,
+      "p_raw": 0.25486365671846856,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_3_unique_ratio",
+      "rho": -0.32986573755303056,
+      "p_raw": 0.10732508883892633,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_5_entropy",
+      "rho": 0.13846153846153847,
+      "p_raw": 0.5092185704859424,
+      "n": 25,
+      "p_adjusted": 0.7231459142551108,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_5_top_frequency",
+      "rho": 0.23658396282993532,
+      "p_raw": 0.25486365671846856,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_5_unique_ratio",
+      "rho": -0.29720899232579134,
+      "p_raw": 0.1490755645785745,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_8_entropy",
+      "rho": 0.2561538461538462,
+      "p_raw": 0.21647833224140892,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_8_top_frequency",
+      "rho": 0.24735526520268034,
+      "p_raw": 0.23322470401627798,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_8_unique_ratio",
+      "rho": -0.2548605607767796,
+      "p_raw": 0.21888777383670852,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_self_similarity_mean",
+      "rho": -0.09935823129805728,
+      "p_raw": 0.6365488902534082,
+      "n": 25,
+      "p_adjusted": 0.8118857103232093,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_self_similarity_std",
+      "rho": -0.006358926803075666,
+      "p_raw": 0.9759338158257004,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_density",
+      "rho": 0.29082516406411557,
+      "p_raw": 0.15842722497364428,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_edge_count",
+      "rho": 0.14783452468018637,
+      "p_raw": 0.4806736284048543,
+      "n": 25,
+      "p_adjusted": 0.722749947452373,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_largest_scc_size",
+      "rho": 0.01278858447798153,
+      "p_raw": 0.9516207875009707,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_largest_wcc_size",
+      "rho": 0.01709824477333194,
+      "p_raw": 0.9353464816975398,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_max_in_degree",
+      "rho": 0.10724365458068214,
+      "p_raw": 0.6098822520517847,
+      "n": 25,
+      "p_adjusted": 0.7835939335401942,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_max_out_degree",
+      "rho": 0.12510350744069687,
+      "p_raw": 0.551280802155422,
+      "n": 25,
+      "p_adjusted": 0.7527103260199031,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_mean_out_degree",
+      "rho": 0.15778336282896413,
+      "p_raw": 0.45129087000396556,
+      "n": 25,
+      "p_adjusted": 0.7226323862720174,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_n_strongly_connected_components",
+      "rho": -0.18387284282280744,
+      "p_raw": 0.378950287522573,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_node_count",
+      "rho": 0.01709824477333194,
+      "p_raw": 0.9353464816975398,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_self_loop_count",
+      "rho": 0.3731462350374175,
+      "p_raw": 0.0661781931329689,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_dag_longest_path",
+      "rho": -0.1920343336871959,
+      "p_raw": 0.35777448865679373,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_density",
+      "rho": 0.09155071228575501,
+      "p_raw": 0.6633923596529451,
+      "n": 25,
+      "p_adjusted": 0.8311916035651605,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_edge_count",
+      "rho": 0.2622890168707033,
+      "p_raw": 0.2052912303721793,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_is_dag",
+      "rho": -0.2195688276724865,
+      "p_raw": 0.29161913755955604,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_largest_scc_size",
+      "rho": 0.2516012786689922,
+      "p_raw": 0.22503941693987858,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_largest_wcc_size",
+      "rho": 0.26550683817725135,
+      "p_raw": 0.19958336103276328,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_max_in_degree",
+      "rho": 0.26624088676196433,
+      "p_raw": 0.19829658924678478,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_max_out_degree",
+      "rho": 0.22617377078714185,
+      "p_raw": 0.2769762175475169,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_mean_out_degree",
+      "rho": 0.24351251281098857,
+      "p_raw": 0.24080030887665388,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_n_strongly_connected_components",
+      "rho": 0.2512162152486465,
+      "p_raw": 0.22577372528635153,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_node_count",
+      "rho": 0.26550683817725135,
+      "p_raw": 0.19958336103276328,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_depth_mean",
+      "rho": -0.2015643376033503,
+      "p_raw": 0.33394875871540103,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_depth_std",
+      "rho": 0.23972054965995157,
+      "p_raw": 0.2484325419392073,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_dispersion",
+      "rho": 0.36,
+      "p_raw": 0.0771175664335246,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_displacement",
+      "rho": -0.5069230769230769,
+      "p_raw": 0.009704932351348812,
+      "n": 25,
+      "p_adjusted": 0.5167876477093243,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_function_change_rate",
+      "rho": 0.1987055857951449,
+      "p_raw": 0.3409932895416072,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_mean_curvature",
+      "rho": 0.06384615384615384,
+      "p_raw": 0.761739933956736,
+      "n": 25,
+      "p_adjusted": 0.9156164568734206,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_mean_step_norm",
+      "rho": -0.003846153846153846,
+      "p_raw": 0.9854424249431718,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_recurrence_rate",
+      "rho": 0.4465638402917221,
+      "p_raw": 0.025234894857602698,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_step_norm_std",
+      "rho": -0.07384615384615385,
+      "p_raw": 0.7257331056231733,
+      "n": 25,
+      "p_adjusted": 0.8987276249868367,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_tortuosity",
+      "rho": 0.04384615384615385,
+      "p_raw": 0.835145685000621,
+      "n": 25,
+      "p_adjusted": 0.946202292048576,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_total_path_length",
+      "rho": -0.003846153846153846,
+      "p_raw": 0.9854424249431718,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_ast_node_count",
+      "rho": -0.011925370484110558,
+      "p_raw": 0.9548829583696574,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_class_count",
+      "rho": 0.1635721640219061,
+      "p_raw": 0.4346417552280309,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_cyclomatic_complexity",
+      "rho": -0.017107188657608675,
+      "p_raw": 0.9353127314465292,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_function_count",
+      "rho": -0.1630108216556247,
+      "p_raw": 0.4362415761397955,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_line_count",
+      "rho": -0.006579073491292993,
+      "p_raw": 0.9751008902939182,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_max_nesting_depth",
+      "rho": -0.25949240105612226,
+      "p_raw": 0.2103410170486575,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_trace_max_depth",
+      "rho": -0.16572664711410237,
+      "p_raw": 0.42853094130587177,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_trace_total_calls",
+      "rho": -0.30060908872667197,
+      "p_raw": 0.14425843988368445,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_trace_total_events",
+      "rho": -0.17142863415122542,
+      "p_raw": 0.41258545368923066,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_trace_total_lines",
+      "rho": -0.26692307692307693,
+      "p_raw": 0.19710580890279145,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_trace_unique_functions",
+      "rho": -0.1630108216556247,
+      "p_raw": 0.4362415761397955,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_trace_wall_clock",
+      "rho": -0.26,
+      "p_raw": 0.20941828735873608,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "cg_dag_longest_path",
+      "rho": -0.019251075169819973,
+      "p_raw": 0.9272259137107627,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "cg_density",
+      "rho": -0.1869000892365848,
+      "p_raw": 0.3710133469996025,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "cg_edge_count",
+      "rho": -0.1827604203668488,
+      "p_raw": 0.3818911762508273,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "cg_is_dag",
+      "rho": 0.19814848097530424,
+      "p_raw": 0.34237636437714886,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "cg_largest_wcc_size",
+      "rho": -0.1630108216556247,
+      "p_raw": 0.4362415761397955,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "cg_max_in_degree",
+      "rho": -0.20441554316077407,
+      "p_raw": 0.32701076830879156,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "cg_max_out_degree",
+      "rho": -0.2426444748040575,
+      "p_raw": 0.24253368315582888,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "cg_mean_out_degree",
+      "rho": -0.20446117144673373,
+      "p_raw": 0.3269004538675196,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "cg_n_strongly_connected_components",
+      "rho": -0.1630108216556247,
+      "p_raw": 0.4362415761397955,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "cg_node_count",
+      "rho": -0.1630108216556247,
+      "p_raw": 0.4362415761397955,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "cg_self_loop_count",
+      "rho": -0.19814848097530424,
+      "p_raw": 0.34237636437714886,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_compression_ratio",
+      "rho": 0.15538461538461537,
+      "p_raw": 0.45828716164359506,
+      "n": 25,
+      "p_adjusted": 0.7226323862720174,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_depth_entropy",
+      "rho": -0.1260813963609434,
+      "p_raw": 0.5481484370671788,
+      "n": 25,
+      "p_adjusted": 0.7527103260199031,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_depth_range",
+      "rho": -0.16572664711410237,
+      "p_raw": 0.42853094130587177,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_depth_transitions",
+      "rho": -0.052420533356002455,
+      "p_raw": 0.8034730904105198,
+      "n": 25,
+      "p_adjusted": 0.9156164568734206,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_mean_depth",
+      "rho": -0.21649502927767253,
+      "p_raw": 0.2985960108729892,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_3_entropy",
+      "rho": -0.13076923076923078,
+      "p_raw": 0.5332474737633855,
+      "n": 25,
+      "p_adjusted": 0.7423641301411837,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_3_top_frequency",
+      "rho": 0.06155029927282869,
+      "p_raw": 0.77007801340775,
+      "n": 25,
+      "p_adjusted": 0.9156164568734206,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_3_unique_ratio",
+      "rho": 0.026589644732662506,
+      "p_raw": 0.8996023456872857,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_5_entropy",
+      "rho": -0.1576923076923077,
+      "p_raw": 0.45155541117112874,
+      "n": 25,
+      "p_adjusted": 0.7226323862720174,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_5_top_frequency",
+      "rho": 0.06155029927282869,
+      "p_raw": 0.77007801340775,
+      "n": 25,
+      "p_adjusted": 0.9156164568734206,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_5_unique_ratio",
+      "rho": 0.004234843154901172,
+      "p_raw": 0.9839714239634593,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_8_entropy",
+      "rho": -0.21000000000000002,
+      "p_raw": 0.3136771274507805,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_8_top_frequency",
+      "rho": 0.05616464808645619,
+      "p_raw": 0.789733701720247,
+      "n": 25,
+      "p_adjusted": 0.9156164568734206,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_8_unique_ratio",
+      "rho": -0.03772860265275589,
+      "p_raw": 0.8578996013112364,
+      "n": 25,
+      "p_adjusted": 0.9625415220811473,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_self_similarity_mean",
+      "rho": 0.24243408436725974,
+      "p_raw": 0.24295503842007274,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "frac_self_similarity_std",
+      "rho": -0.09776849959728835,
+      "p_raw": 0.6419800332302684,
+      "n": 25,
+      "p_adjusted": 0.8139389707026619,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "lg_density",
+      "rho": -0.26812849120726,
+      "p_raw": 0.19501368455373366,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "lg_edge_count",
+      "rho": 0.13359005225006423,
+      "p_raw": 0.5243742225354462,
+      "n": 25,
+      "p_adjusted": 0.7396801947023182,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "lg_largest_scc_size",
+      "rho": 0.3069260274715567,
+      "p_raw": 0.1356061996289491,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "lg_largest_wcc_size",
+      "rho": 0.32875261541451867,
+      "p_raw": 0.10858745759874434,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "lg_max_in_degree",
+      "rho": 0.2257966400080544,
+      "p_raw": 0.27779948132816895,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "lg_max_out_degree",
+      "rho": 0.1468606391695137,
+      "p_raw": 0.4836011250510454,
+      "n": 25,
+      "p_adjusted": 0.722749947452373,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "lg_mean_out_degree",
+      "rho": 0.06080432030969837,
+      "p_raw": 0.7727926540564263,
+      "n": 25,
+      "p_adjusted": 0.9156164568734206,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "lg_n_strongly_connected_components",
+      "rho": 0.02619417593285804,
+      "p_raw": 0.9010883486572295,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "lg_node_count",
+      "rho": 0.32875261541451867,
+      "p_raw": 0.10858745759874434,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "lg_self_loop_count",
+      "rho": -0.28866029502894563,
+      "p_raw": 0.1616905857783503,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "tg_dag_longest_path",
+      "rho": -0.028165035607455403,
+      "p_raw": 0.893686005874102,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "tg_density",
+      "rho": -0.11402225075589487,
+      "p_raw": 0.5873371190477982,
+      "n": 25,
+      "p_adjusted": 0.7835939335401942,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "tg_edge_count",
+      "rho": -0.1891307490906022,
+      "p_raw": 0.36522704424459246,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "tg_is_dag",
+      "rho": 0.057781270440128034,
+      "p_raw": 0.7838199000416238,
+      "n": 25,
+      "p_adjusted": 0.9156164568734206,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "tg_largest_scc_size",
+      "rho": -0.12196112251459228,
+      "p_raw": 0.5614016540463007,
+      "n": 25,
+      "p_adjusted": 0.7568262804548231,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "tg_largest_wcc_size",
+      "rho": -0.20446117144673373,
+      "p_raw": 0.3269004538675196,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "tg_max_in_degree",
+      "rho": -0.19443143623152914,
+      "p_raw": 0.35168975461013835,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "tg_max_out_degree",
+      "rho": -0.2321481722796324,
+      "p_raw": 0.2641413663388703,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "tg_mean_out_degree",
+      "rho": -0.19288534090354936,
+      "p_raw": 0.3556072791362173,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "tg_n_strongly_connected_components",
+      "rho": -0.1938340941396931,
+      "p_raw": 0.3532002769190473,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "tg_node_count",
+      "rho": -0.20446117144673373,
+      "p_raw": 0.3269004538675196,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "traj_depth_mean",
+      "rho": 0.1418415709060613,
+      "p_raw": 0.49883037326606217,
+      "n": 25,
+      "p_adjusted": 0.722749947452373,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "traj_depth_std",
+      "rho": -0.2936369362616708,
+      "p_raw": 0.15425852953017793,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "traj_dispersion",
+      "rho": -0.31384615384615383,
+      "p_raw": 0.126563979771121,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "traj_displacement",
+      "rho": 0.15615384615384614,
+      "p_raw": 0.4560374306078926,
+      "n": 25,
+      "p_adjusted": 0.7226323862720174,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "traj_function_change_rate",
+      "rho": -0.21944729621217465,
+      "p_raw": 0.29189303066966804,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "traj_mean_curvature",
+      "rho": -0.24461538461538462,
+      "p_raw": 0.23860976723289998,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "traj_mean_step_norm",
+      "rho": -0.22846153846153847,
+      "p_raw": 0.27201537368340706,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "traj_recurrence_rate",
+      "rho": -0.5502196844620003,
+      "p_raw": 0.004375809645742597,
+      "n": 25,
+      "p_adjusted": 0.5167876477093243,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "traj_step_norm_std",
+      "rho": -0.1453846153846154,
+      "p_raw": 0.48805519410308196,
+      "n": 25,
+      "p_adjusted": 0.722749947452373,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "traj_tortuosity",
+      "rho": -0.23076923076923078,
+      "p_raw": 0.2670691900336425,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "runtime_cv",
+      "predictor": "traj_total_path_length",
+      "rho": -0.22846153846153847,
+      "p_raw": 0.27201537368340706,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "baseline_ast_node_count",
+      "rho": -0.013848817336386458,
+      "p_raw": 0.9476151031054808,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "baseline_class_count",
+      "rho": 0.12267912301642961,
+      "p_raw": 0.5590817777189936,
+      "n": 25,
+      "p_adjusted": 0.7568262804548231,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "baseline_cyclomatic_complexity",
+      "rho": -0.005171940756951459,
+      "p_raw": 0.9804251810152143,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "baseline_function_count",
+      "rho": -0.14074387952225328,
+      "p_raw": 0.5021924517509446,
+      "n": 25,
+      "p_adjusted": 0.722749947452373,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "baseline_line_count",
+      "rho": 0.010836121044482576,
+      "p_raw": 0.9590003397757817,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "baseline_max_nesting_depth",
+      "rho": -0.2896659360626481,
+      "p_raw": 0.16016882867220053,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "baseline_trace_max_depth",
+      "rho": -0.15317159809030675,
+      "p_raw": 0.46479172262566376,
+      "n": 25,
+      "p_adjusted": 0.7226323862720174,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "baseline_trace_total_calls",
+      "rho": -0.2698838503761558,
+      "p_raw": 0.19199432632956706,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "baseline_trace_total_events",
+      "rho": -0.16218996524487195,
+      "p_raw": 0.43858669969151465,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "baseline_trace_total_lines",
+      "rho": -0.25,
+      "p_raw": 0.22810349446062975,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "baseline_trace_unique_functions",
+      "rho": -0.14074387952225328,
+      "p_raw": 0.5021924517509446,
+      "n": 25,
+      "p_adjusted": 0.722749947452373,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "baseline_trace_wall_clock",
+      "rho": -0.2169230769230769,
+      "p_raw": 0.2976182551465214,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "cg_dag_longest_path",
+      "rho": 0.014229055560301719,
+      "p_raw": 0.9461788144039694,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "cg_density",
+      "rho": -0.15052356180127638,
+      "p_raw": 0.4726374092439773,
+      "n": 25,
+      "p_adjusted": 0.722749947452373,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "cg_edge_count",
+      "rho": -0.16519534564051552,
+      "p_raw": 0.43003353603335376,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "cg_is_dag",
+      "rho": 0.22645540682891913,
+      "p_raw": 0.276362428292241,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "cg_largest_wcc_size",
+      "rho": -0.14074387952225328,
+      "p_raw": 0.5021924517509446,
+      "n": 25,
+      "p_adjusted": 0.722749947452373,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "cg_max_in_degree",
+      "rho": -0.1782084222427261,
+      "p_raw": 0.39406052926271534,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "cg_max_out_degree",
+      "rho": -0.2132201008823001,
+      "p_raw": 0.30614278535072936,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "cg_mean_out_degree",
+      "rho": -0.19066317828161672,
+      "p_raw": 0.3612825984676379,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "cg_n_strongly_connected_components",
+      "rho": -0.14074387952225328,
+      "p_raw": 0.5021924517509446,
+      "n": 25,
+      "p_adjusted": 0.722749947452373,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "cg_node_count",
+      "rho": -0.14074387952225328,
+      "p_raw": 0.5021924517509446,
+      "n": 25,
+      "p_adjusted": 0.722749947452373,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "cg_self_loop_count",
+      "rho": -0.22645540682891913,
+      "p_raw": 0.276362428292241,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_compression_ratio",
+      "rho": 0.14692307692307693,
+      "p_raw": 0.48341316697868447,
+      "n": 25,
+      "p_adjusted": 0.722749947452373,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_depth_entropy",
+      "rho": -0.10700329033264275,
+      "p_raw": 0.6106882298951749,
+      "n": 25,
+      "p_adjusted": 0.7835939335401942,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_depth_range",
+      "rho": -0.15317159809030675,
+      "p_raw": 0.46479172262566376,
+      "n": 25,
+      "p_adjusted": 0.7226323862720174,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_depth_transitions",
+      "rho": -0.055108765835797456,
+      "p_raw": 0.7936023795344763,
+      "n": 25,
+      "p_adjusted": 0.9156164568734206,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_mean_depth",
+      "rho": -0.2007348547325546,
+      "p_raw": 0.3359836869858432,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_3_entropy",
+      "rho": -0.10999999999999999,
+      "p_raw": 0.6006715408190598,
+      "n": 25,
+      "p_adjusted": 0.7835939335401942,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_3_top_frequency",
+      "rho": 0.05924216305009762,
+      "p_raw": 0.7784857701156994,
+      "n": 25,
+      "p_adjusted": 0.9156164568734206,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_3_unique_ratio",
+      "rho": 0.016185001141620657,
+      "p_raw": 0.9387932186878495,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_5_entropy",
+      "rho": -0.1323076923076923,
+      "p_raw": 0.5283992800855006,
+      "n": 25,
+      "p_adjusted": 0.7404542543303397,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_5_top_frequency",
+      "rho": 0.05924216305009762,
+      "p_raw": 0.7784857701156994,
+      "n": 25,
+      "p_adjusted": 0.9156164568734206,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_5_unique_ratio",
+      "rho": -0.009624643533866299,
+      "p_raw": 0.9635809399314671,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_8_entropy",
+      "rho": -0.1815384615384615,
+      "p_raw": 0.38513664752146737,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_8_top_frequency",
+      "rho": 0.05231775438190439,
+      "p_raw": 0.8038510677715007,
+      "n": 25,
+      "p_adjusted": 0.9156164568734206,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_8_unique_ratio",
+      "rho": -0.05428298953100593,
+      "p_raw": 0.7966312761267332,
+      "n": 25,
+      "p_adjusted": 0.9156164568734206,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_self_similarity_mean",
+      "rho": 0.2154086454541882,
+      "p_raw": 0.30108652398660607,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "frac_self_similarity_std",
+      "rho": -0.07869171918806137,
+      "p_raw": 0.7084819549680939,
+      "n": 25,
+      "p_adjusted": 0.8824950667146432,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "lg_density",
+      "rho": -0.23196769038447315,
+      "p_raw": 0.26452339345558384,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "lg_edge_count",
+      "rho": 0.17362856935094803,
+      "p_raw": 0.4065223282524555,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "lg_largest_scc_size",
+      "rho": 0.34064138654987164,
+      "p_raw": 0.09565952576736664,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "lg_largest_wcc_size",
+      "rho": 0.34895963196482,
+      "p_raw": 0.08732284588544151,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "lg_max_in_degree",
+      "rho": 0.2546549325134016,
+      "p_raw": 0.21927251612333615,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "lg_max_out_degree",
+      "rho": 0.18066189739106847,
+      "p_raw": 0.38747442051564607,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "lg_mean_out_degree",
+      "rho": 0.10852416662870215,
+      "p_raw": 0.605595956264065,
+      "n": 25,
+      "p_adjusted": 0.7835939335401942,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "lg_n_strongly_connected_components",
+      "rho": 0.0010272225856022763,
+      "p_raw": 0.9961118068842739,
+      "n": 25,
+      "p_adjusted": 0.9961118068842738,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "lg_node_count",
+      "rho": 0.34895963196482,
+      "p_raw": 0.08732284588544151,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "lg_self_loop_count",
+      "rho": -0.26206286947072294,
+      "p_raw": 0.20569649614862456,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "tg_dag_longest_path",
+      "rho": -0.007681373347487838,
+      "p_raw": 0.9709307341245884,
+      "n": 25,
+      "p_adjusted": 0.9900907382683753,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "tg_density",
+      "rho": -0.06824689461301738,
+      "p_raw": 0.7458299920430238,
+      "n": 25,
+      "p_adjusted": 0.912998783363012,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "tg_edge_count",
+      "rho": -0.17666058980990315,
+      "p_raw": 0.39824783373584216,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "tg_is_dag",
+      "rho": 0.057781270440128034,
+      "p_raw": 0.7838199000416238,
+      "n": 25,
+      "p_adjusted": 0.9156164568734206,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "tg_largest_scc_size",
+      "rho": -0.12918844829323478,
+      "p_raw": 0.5382507866195572,
+      "n": 25,
+      "p_adjusted": 0.7444637503244524,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "tg_largest_wcc_size",
+      "rho": -0.19066317828161672,
+      "p_raw": 0.3612825984676379,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "tg_max_in_degree",
+      "rho": -0.17259464425736176,
+      "p_raw": 0.40936567067206836,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "tg_max_out_degree",
+      "rho": -0.21422496780216077,
+      "p_raw": 0.3038147292005964,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "tg_mean_out_degree",
+      "rho": -0.179496336762739,
+      "p_raw": 0.3905954064494388,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "tg_n_strongly_connected_components",
+      "rho": -0.1802792623816726,
+      "p_raw": 0.38849742274410015,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "tg_node_count",
+      "rho": -0.19066317828161672,
+      "p_raw": 0.3612825984676379,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "traj_depth_mean",
+      "rho": 0.10783277320343843,
+      "p_raw": 0.6079087154514764,
+      "n": 25,
+      "p_adjusted": 0.7835939335401942,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "traj_depth_std",
+      "rho": -0.25299227559268245,
+      "p_raw": 0.22240008093299538,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "traj_dispersion",
+      "rho": -0.27999999999999997,
+      "p_raw": 0.17521838241225215,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "traj_displacement",
+      "rho": 0.16153846153846155,
+      "p_raw": 0.4404527964471072,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "traj_function_change_rate",
+      "rho": -0.17588970433641218,
+      "p_raw": 0.40034257840157056,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "traj_mean_curvature",
+      "rho": -0.19307692307692306,
+      "p_raw": 0.35512045597656383,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "traj_mean_step_norm",
+      "rho": -0.18,
+      "p_raw": 0.38924501850072935,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "traj_recurrence_rate",
+      "rho": -0.5164712700809794,
+      "p_raw": 0.008212506490044456,
+      "n": 25,
+      "p_adjusted": 0.5167876477093243,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "traj_step_norm_std",
+      "rho": -0.09615384615384616,
+      "p_raw": 0.6475146685503538,
+      "n": 25,
+      "p_adjusted": 0.8160983692380198,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "traj_tortuosity",
+      "rho": -0.17384615384615384,
+      "p_raw": 0.40592536475669166,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "mandelbrot",
+      "outcome": "stability_cv",
+      "predictor": "traj_total_path_length",
+      "rho": -0.18,
+      "p_raw": 0.38924501850072935,
+      "n": 25,
+      "p_adjusted": 0.716156073612472,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_ast_node_count",
+      "rho": 0.23636363636363633,
+      "p_raw": 0.5108853175152003,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_class_count",
+      "rho": -0.058025885318565944,
+      "p_raw": 0.8734948923712951,
+      "n": 10,
+      "p_adjusted": 0.916524197414216,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_cyclomatic_complexity",
+      "rho": 0.04377137796365056,
+      "p_raw": 0.9044333503367094,
+      "n": 10,
+      "p_adjusted": 0.9337729580941466,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_function_count",
+      "rho": 0.3027495893961478,
+      "p_raw": 0.3951712933485606,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_line_count",
+      "rho": 0.17848266192003245,
+      "p_raw": 0.6217708405849937,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_max_nesting_depth",
+      "rho": -0.31209389196617965,
+      "p_raw": 0.3799958102142363,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_max_depth",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_total_calls",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_total_events",
+      "rho": 0.6484848484848483,
+      "p_raw": 0.04254012768448949,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_total_lines",
+      "rho": 0.6484848484848483,
+      "p_raw": 0.04254012768448949,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_unique_functions",
+      "rho": 0.3027495893961478,
+      "p_raw": 0.3951712933485606,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "baseline_trace_wall_clock",
+      "rho": 0.6727272727272726,
+      "p_raw": 0.03304122254543772,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_dag_longest_path",
+      "rho": -0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_density",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_edge_count",
+      "rho": 0.3027495893961478,
+      "p_raw": 0.3951712933485606,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_is_dag",
+      "rho": -0.5222329678670935,
+      "p_raw": 0.1215029188171132,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_largest_wcc_size",
+      "rho": 0.3027495893961478,
+      "p_raw": 0.3951712933485606,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_max_in_degree",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_max_out_degree",
+      "rho": 0.3027495893961478,
+      "p_raw": 0.3951712933485606,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_mean_out_degree",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_n_strongly_connected_components",
+      "rho": 0.3027495893961478,
+      "p_raw": 0.3951712933485606,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_node_count",
+      "rho": 0.3027495893961478,
+      "p_raw": 0.3951712933485606,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "cg_self_loop_count",
+      "rho": 0.5222329678670935,
+      "p_raw": 0.1215029188171132,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_branching_growth_rate",
+      "rho": -0.5222329678670935,
+      "p_raw": 0.1215029188171132,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_compression_ratio",
+      "rho": -0.32121212121212117,
+      "p_raw": 0.36546831043867045,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_depth_entropy",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_depth_range",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_depth_transitions",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_mean_depth",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_3_entropy",
+      "rho": -0.4424242424242424,
+      "p_raw": 0.20042268671194213,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_3_top_frequency",
+      "rho": 0.6022390336078728,
+      "p_raw": 0.06541212136077765,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_3_unique_ratio",
+      "rho": -0.6121212121212121,
+      "p_raw": 0.05997214247725527,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_5_entropy",
+      "rho": -0.4424242424242424,
+      "p_raw": 0.20042268671194213,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_5_top_frequency",
+      "rho": 0.5785300076028639,
+      "p_raw": 0.07975393476604609,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_5_unique_ratio",
+      "rho": -0.6606060606060605,
+      "p_raw": 0.03758837757140934,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_8_entropy",
+      "rho": -0.5272727272727272,
+      "p_raw": 0.11730806555020232,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_8_top_frequency",
+      "rho": 0.6154574548966636,
+      "p_raw": 0.058205202603733616,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_motif_8_unique_ratio",
+      "rho": -0.6242424242424242,
+      "p_raw": 0.053717767217167436,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_self_similarity_mean",
+      "rho": 0.12727272727272726,
+      "p_raw": 0.7260570147627894,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "frac_self_similarity_std",
+      "rho": -0.12727272727272726,
+      "p_raw": 0.7260570147627894,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_density",
+      "rho": 0.0303030303030303,
+      "p_raw": 0.9337729580941466,
+      "n": 10,
+      "p_adjusted": 0.9337729580941466,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_edge_count",
+      "rho": -0.5957474328064633,
+      "p_raw": 0.06915584415208557,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_largest_scc_size",
+      "rho": -0.0926084733220795,
+      "p_raw": 0.7991474442223044,
+      "n": 10,
+      "p_adjusted": 0.8592481344076659,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_largest_wcc_size",
+      "rho": -0.25233755650763207,
+      "p_raw": 0.4818366039881695,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_max_in_degree",
+      "rho": -0.370433893288318,
+      "p_raw": 0.2920137866294627,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_max_out_degree",
+      "rho": -0.23242568374889835,
+      "p_raw": 0.5181563175215667,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_mean_out_degree",
+      "rho": -0.5227987675648555,
+      "p_raw": 0.12102739408380088,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_n_strongly_connected_components",
+      "rho": -0.4494665749754947,
+      "p_raw": 0.1925017251163438,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_node_count",
+      "rho": -0.25233755650763207,
+      "p_raw": 0.4818366039881695,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "lg_self_loop_count",
+      "rho": -0.5337825136516684,
+      "p_raw": 0.11202516929143763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_dag_longest_path",
+      "rho": -0.34815531191139565,
+      "p_raw": 0.32420418355343306,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_density",
+      "rho": 0.3027495893961478,
+      "p_raw": 0.3951712933485606,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_edge_count",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_is_dag",
+      "rho": -0.34815531191139565,
+      "p_raw": 0.32420418355343306,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_largest_scc_size",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_largest_wcc_size",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_max_in_degree",
+      "rho": 0.34815531191139565,
+      "p_raw": 0.32420418355343306,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_max_out_degree",
+      "rho": 0.34815531191139565,
+      "p_raw": 0.32420418355343306,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_mean_out_degree",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "tg_node_count",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_depth_mean",
+      "rho": -0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_depth_std",
+      "rho": 0.38924947208076155,
+      "p_raw": 0.2662240730692269,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_dispersion",
+      "rho": 0.16363636363636364,
+      "p_raw": 0.6514773427962428,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_displacement",
+      "rho": 0.709090909090909,
+      "p_raw": 0.02166592336753244,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_function_change_rate",
+      "rho": 0.3027495893961478,
+      "p_raw": 0.3951712933485606,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_mean_curvature",
+      "rho": -0.1515151515151515,
+      "p_raw": 0.6760651759978539,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_mean_step_norm",
+      "rho": -0.23636363636363633,
+      "p_raw": 0.5108853175152003,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_recurrence_rate",
+      "rho": -0.058025885318565944,
+      "p_raw": 0.8734948923712951,
+      "n": 10,
+      "p_adjusted": 0.916524197414216,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_step_norm_std",
+      "rho": -0.2606060606060606,
+      "p_raw": 0.46708905438634024,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_tortuosity",
+      "rho": -0.23636363636363633,
+      "p_raw": 0.5108853175152003,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_mean_s",
+      "predictor": "traj_total_path_length",
+      "rho": -0.23636363636363633,
+      "p_raw": 0.5108853175152003,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_ast_node_count",
+      "rho": 0.06666666666666665,
+      "p_raw": 0.8548130882487427,
+      "n": 10,
+      "p_adjusted": 0.9058467054576228,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_class_count",
+      "rho": 0.5222329678670935,
+      "p_raw": 0.1215029188171132,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_cyclomatic_complexity",
+      "rho": -0.3439179697143973,
+      "p_raw": 0.3305264309208816,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_function_count",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_line_count",
+      "rho": -0.04308202184276645,
+      "p_raw": 0.905932801229498,
+      "n": 10,
+      "p_adjusted": 0.9337729580941466,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_max_nesting_depth",
+      "rho": -0.22193343428706105,
+      "p_raw": 0.5377342555572787,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_trace_max_depth",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_trace_total_calls",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_trace_total_events",
+      "rho": -0.406060606060606,
+      "p_raw": 0.24428229408662647,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_trace_total_lines",
+      "rho": -0.406060606060606,
+      "p_raw": 0.24428229408662647,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_trace_unique_functions",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "baseline_trace_wall_clock",
+      "rho": -0.33333333333333326,
+      "p_raw": 0.3465935070873343,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "cg_dag_longest_path",
+      "rho": 0.5449492609130662,
+      "p_raw": 0.10331591735410985,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "cg_density",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "cg_edge_count",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "cg_is_dag",
+      "rho": 0.2901294265928297,
+      "p_raw": 0.41612025350705956,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "cg_largest_wcc_size",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "cg_max_in_degree",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "cg_max_out_degree",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "cg_mean_out_degree",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "cg_n_strongly_connected_components",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "cg_node_count",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "cg_self_loop_count",
+      "rho": -0.2901294265928297,
+      "p_raw": 0.41612025350705956,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_branching_growth_rate",
+      "rho": 0.2901294265928297,
+      "p_raw": 0.41612025350705956,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_compression_ratio",
+      "rho": 0.09090909090909088,
+      "p_raw": 0.8027717312071619,
+      "n": 10,
+      "p_adjusted": 0.8592481344076659,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_depth_entropy",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_depth_range",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_depth_transitions",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_mean_depth",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_3_entropy",
+      "rho": 0.1515151515151515,
+      "p_raw": 0.6760651759978539,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_3_top_frequency",
+      "rho": -0.2572062539366956,
+      "p_raw": 0.47312855476302995,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_3_unique_ratio",
+      "rho": 0.43030303030303024,
+      "p_raw": 0.21449233253280775,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_5_entropy",
+      "rho": 0.1515151515151515,
+      "p_raw": 0.6760651759978539,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_5_top_frequency",
+      "rho": -0.3754290474869648,
+      "p_raw": 0.28504130394273436,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_5_unique_ratio",
+      "rho": 0.3939393939393939,
+      "p_raw": 0.25999776683488757,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_8_entropy",
+      "rho": -0.0303030303030303,
+      "p_raw": 0.9337729580941466,
+      "n": 10,
+      "p_adjusted": 0.9337729580941466,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_8_top_frequency",
+      "rho": -0.5231388366621641,
+      "p_raw": 0.12074214214266064,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_motif_8_unique_ratio",
+      "rho": 0.34545454545454546,
+      "p_raw": 0.3282265114713672,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_self_similarity_mean",
+      "rho": -0.28484848484848485,
+      "p_raw": 0.4250381548921454,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "frac_self_similarity_std",
+      "rho": 0.28484848484848485,
+      "p_raw": 0.4250381548921454,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "lg_density",
+      "rho": -0.41818181818181815,
+      "p_raw": 0.22911284098281892,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "lg_edge_count",
+      "rho": -0.03647433262080388,
+      "p_raw": 0.9203184602756677,
+      "n": 10,
+      "p_adjusted": 0.9337729580941466,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "lg_largest_scc_size",
+      "rho": 0.4198250790600938,
+      "p_raw": 0.2270985345419743,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "lg_largest_wcc_size",
+      "rho": 0.19694638556693236,
+      "p_raw": 0.585505074276392,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "lg_max_in_degree",
+      "rho": -0.03086949110735984,
+      "p_raw": 0.9325372996297813,
+      "n": 10,
+      "p_adjusted": 0.9337729580941466,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "lg_max_out_degree",
+      "rho": 0.3547549909851606,
+      "p_raw": 0.3144835743992479,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "lg_mean_out_degree",
+      "rho": -0.18845071854082002,
+      "p_raw": 0.6020947513149707,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "lg_n_strongly_connected_components",
+      "rho": 0.20225995873897262,
+      "p_raw": 0.5752163635417707,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "lg_node_count",
+      "rho": 0.19694638556693236,
+      "p_raw": 0.585505074276392,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "lg_self_loop_count",
+      "rho": -0.263823541230135,
+      "p_raw": 0.46140507136140835,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "tg_dag_longest_path",
+      "rho": -0.17407765595569782,
+      "p_raw": 0.6305360755569764,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "tg_density",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "tg_edge_count",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "tg_is_dag",
+      "rho": -0.17407765595569782,
+      "p_raw": 0.6305360755569764,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "tg_largest_scc_size",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "tg_largest_wcc_size",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "tg_max_in_degree",
+      "rho": 0.17407765595569782,
+      "p_raw": 0.6305360755569764,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "tg_max_out_degree",
+      "rho": 0.17407765595569782,
+      "p_raw": 0.6305360755569764,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "tg_mean_out_degree",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "tg_node_count",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "traj_depth_mean",
+      "rho": -0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "traj_depth_std",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "traj_dispersion",
+      "rho": 0.2121212121212121,
+      "p_raw": 0.5563057751029299,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "traj_displacement",
+      "rho": -0.6121212121212121,
+      "p_raw": 0.05997214247725527,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "traj_function_change_rate",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "traj_mean_curvature",
+      "rho": -0.16363636363636364,
+      "p_raw": 0.6514773427962428,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "traj_mean_step_norm",
+      "rho": 0.43030303030303024,
+      "p_raw": 0.21449233253280775,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "traj_recurrence_rate",
+      "rho": 0.5222329678670935,
+      "p_raw": 0.1215029188171132,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "traj_step_norm_std",
+      "rho": 0.33333333333333326,
+      "p_raw": 0.3465935070873343,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "traj_tortuosity",
+      "rho": 0.43030303030303024,
+      "p_raw": 0.21449233253280775,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "runtime_cv",
+      "predictor": "traj_total_path_length",
+      "rho": 0.43030303030303024,
+      "p_raw": 0.21449233253280775,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "baseline_ast_node_count",
+      "rho": 0.06666666666666665,
+      "p_raw": 0.8548130882487427,
+      "n": 10,
+      "p_adjusted": 0.9058467054576228,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "baseline_class_count",
+      "rho": 0.5222329678670935,
+      "p_raw": 0.1215029188171132,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "baseline_cyclomatic_complexity",
+      "rho": -0.3439179697143973,
+      "p_raw": 0.3305264309208816,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "baseline_function_count",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "baseline_line_count",
+      "rho": -0.04308202184276645,
+      "p_raw": 0.905932801229498,
+      "n": 10,
+      "p_adjusted": 0.9337729580941466,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "baseline_max_nesting_depth",
+      "rho": -0.22193343428706105,
+      "p_raw": 0.5377342555572787,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "baseline_trace_max_depth",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "baseline_trace_total_calls",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "baseline_trace_total_events",
+      "rho": -0.406060606060606,
+      "p_raw": 0.24428229408662647,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "baseline_trace_total_lines",
+      "rho": -0.406060606060606,
+      "p_raw": 0.24428229408662647,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "baseline_trace_unique_functions",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "baseline_trace_wall_clock",
+      "rho": -0.33333333333333326,
+      "p_raw": 0.3465935070873343,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "cg_dag_longest_path",
+      "rho": 0.5449492609130662,
+      "p_raw": 0.10331591735410985,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "cg_density",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "cg_edge_count",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "cg_is_dag",
+      "rho": 0.2901294265928297,
+      "p_raw": 0.41612025350705956,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "cg_largest_wcc_size",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "cg_max_in_degree",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "cg_max_out_degree",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "cg_mean_out_degree",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "cg_n_strongly_connected_components",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "cg_node_count",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "cg_self_loop_count",
+      "rho": -0.2901294265928297,
+      "p_raw": 0.41612025350705956,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_branching_growth_rate",
+      "rho": 0.2901294265928297,
+      "p_raw": 0.41612025350705956,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_compression_ratio",
+      "rho": 0.09090909090909088,
+      "p_raw": 0.8027717312071619,
+      "n": 10,
+      "p_adjusted": 0.8592481344076659,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_depth_entropy",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_depth_range",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_depth_transitions",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_mean_depth",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_3_entropy",
+      "rho": 0.1515151515151515,
+      "p_raw": 0.6760651759978539,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_3_top_frequency",
+      "rho": -0.2572062539366956,
+      "p_raw": 0.47312855476302995,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_3_unique_ratio",
+      "rho": 0.43030303030303024,
+      "p_raw": 0.21449233253280775,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_5_entropy",
+      "rho": 0.1515151515151515,
+      "p_raw": 0.6760651759978539,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_5_top_frequency",
+      "rho": -0.3754290474869648,
+      "p_raw": 0.28504130394273436,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_5_unique_ratio",
+      "rho": 0.3939393939393939,
+      "p_raw": 0.25999776683488757,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_8_entropy",
+      "rho": -0.0303030303030303,
+      "p_raw": 0.9337729580941466,
+      "n": 10,
+      "p_adjusted": 0.9337729580941466,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_8_top_frequency",
+      "rho": -0.5231388366621641,
+      "p_raw": 0.12074214214266064,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_motif_8_unique_ratio",
+      "rho": 0.34545454545454546,
+      "p_raw": 0.3282265114713672,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_self_similarity_mean",
+      "rho": -0.28484848484848485,
+      "p_raw": 0.4250381548921454,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "frac_self_similarity_std",
+      "rho": 0.28484848484848485,
+      "p_raw": 0.4250381548921454,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "lg_density",
+      "rho": -0.41818181818181815,
+      "p_raw": 0.22911284098281892,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "lg_edge_count",
+      "rho": -0.03647433262080388,
+      "p_raw": 0.9203184602756677,
+      "n": 10,
+      "p_adjusted": 0.9337729580941466,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "lg_largest_scc_size",
+      "rho": 0.4198250790600938,
+      "p_raw": 0.2270985345419743,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "lg_largest_wcc_size",
+      "rho": 0.19694638556693236,
+      "p_raw": 0.585505074276392,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "lg_max_in_degree",
+      "rho": -0.03086949110735984,
+      "p_raw": 0.9325372996297813,
+      "n": 10,
+      "p_adjusted": 0.9337729580941466,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "lg_max_out_degree",
+      "rho": 0.3547549909851606,
+      "p_raw": 0.3144835743992479,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "lg_mean_out_degree",
+      "rho": -0.18845071854082002,
+      "p_raw": 0.6020947513149707,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "lg_n_strongly_connected_components",
+      "rho": 0.20225995873897262,
+      "p_raw": 0.5752163635417707,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "lg_node_count",
+      "rho": 0.19694638556693236,
+      "p_raw": 0.585505074276392,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "lg_self_loop_count",
+      "rho": -0.263823541230135,
+      "p_raw": 0.46140507136140835,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "tg_dag_longest_path",
+      "rho": -0.17407765595569782,
+      "p_raw": 0.6305360755569764,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "tg_density",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "tg_edge_count",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "tg_is_dag",
+      "rho": -0.17407765595569782,
+      "p_raw": 0.6305360755569764,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "tg_largest_scc_size",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "tg_largest_wcc_size",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "tg_max_in_degree",
+      "rho": 0.17407765595569782,
+      "p_raw": 0.6305360755569764,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "tg_max_out_degree",
+      "rho": 0.17407765595569782,
+      "p_raw": 0.6305360755569764,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "tg_mean_out_degree",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "tg_node_count",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "traj_depth_mean",
+      "rho": -0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "traj_depth_std",
+      "rho": 0.11244984748999777,
+      "p_raw": 0.7571028910428851,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "traj_dispersion",
+      "rho": 0.2121212121212121,
+      "p_raw": 0.5563057751029299,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "traj_displacement",
+      "rho": -0.6121212121212121,
+      "p_raw": 0.05997214247725527,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "traj_function_change_rate",
+      "rho": 0.2335496832484569,
+      "p_raw": 0.5160766337811763,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "traj_mean_curvature",
+      "rho": -0.16363636363636364,
+      "p_raw": 0.6514773427962428,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "traj_mean_step_norm",
+      "rho": 0.43030303030303024,
+      "p_raw": 0.21449233253280775,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "traj_recurrence_rate",
+      "rho": 0.5222329678670935,
+      "p_raw": 0.1215029188171132,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "traj_step_norm_std",
+      "rho": 0.33333333333333326,
+      "p_raw": 0.3465935070873343,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "traj_tortuosity",
+      "rho": 0.43030303030303024,
+      "p_raw": 0.21449233253280775,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    },
+    {
+      "task": "graph_traversal",
+      "outcome": "stability_cv",
+      "predictor": "traj_total_path_length",
+      "rho": 0.43030303030303024,
+      "p_raw": 0.21449233253280775,
+      "n": 10,
+      "p_adjusted": 0.8227699785312986,
+      "significant_fdr": false
+    }
+  ],
+  "elapsed_s": 506.2338215030031
+}

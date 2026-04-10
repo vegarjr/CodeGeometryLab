@@ -22,20 +22,24 @@ VARIANT_MODULES = [
     "variants.mandelbrot.v08_generator_pipeline",
     "variants.mandelbrot.v09_functional_map",
     "variants.mandelbrot.v10_object_oriented",
+    "variants.mandelbrot.v11_while_true_break",
+    "variants.mandelbrot.v12_precomputed_coords",
+    "variants.mandelbrot.v13_column_major",
+    "variants.mandelbrot.v14_flat_array",
+    "variants.mandelbrot.v15_enumerate_style",
+    "variants.mandelbrot.v16_try_except",
+    "variants.mandelbrot.v17_deque_worklist",
+    "variants.mandelbrot.v18_numpy_complex",
+    "variants.mandelbrot.v19_sentinel_value",
+    "variants.mandelbrot.v20_dict_cache",
+    "variants.mandelbrot.v21_list_comprehension",
+    "variants.mandelbrot.v22_split_real_imag",
+    "variants.mandelbrot.v23_itertools_product",
+    "variants.mandelbrot.v24_half_grid_symmetry",
+    "variants.mandelbrot.v25_state_machine",
 ]
 
-VARIANT_NAMES = [
-    "v01_naive_loop",
-    "v02_complex_class",
-    "v03_recursive",
-    "v04_numpy_vectorized",
-    "v05_numpy_rowwise",
-    "v06_early_exit",
-    "v07_chunked_blocks",
-    "v08_generator_pipeline",
-    "v09_functional_map",
-    "v10_object_oriented",
-]
+VARIANT_NAMES = [m.rsplit(".", 1)[1] for m in VARIANT_MODULES]
 
 
 def load_variants():
